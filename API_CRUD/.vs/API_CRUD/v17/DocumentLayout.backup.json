@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\prograsei\\Documents\\API_CRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0F32EE-C5C5-4AA5-88FE-F0C46CC4C235}|API_CRUD\\API_CRUD.csproj|c:\\users\\prograsei\\documents\\api_crud\\api_crud\\controllers\\semestremodelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0F32EE-C5C5-4AA5-88FE-F0C46CC4C235}|API_CRUD\\API_CRUD.csproj|solutionrelative:api_crud\\controllers\\semestremodelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0F32EE-C5C5-4AA5-88FE-F0C46CC4C235}|API_CRUD\\API_CRUD.csproj|c:\\users\\prograsei\\documents\\api_crud\\api_crud\\data\\classconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0F32EE-C5C5-4AA5-88FE-F0C46CC4C235}|API_CRUD\\API_CRUD.csproj|solutionrelative:api_crud\\data\\classconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0F32EE-C5C5-4AA5-88FE-F0C46CC4C235}|API_CRUD\\API_CRUD.csproj|c:\\users\\prograsei\\documents\\api_crud\\api_crud\\models\\semestremodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0F32EE-C5C5-4AA5-88FE-F0C46CC4C235}|API_CRUD\\API_CRUD.csproj|solutionrelative:api_crud\\models\\semestremodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0F32EE-C5C5-4AA5-88FE-F0C46CC4C235}|API_CRUD\\API_CRUD.csproj|c:\\users\\prograsei\\documents\\api_crud\\api_crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0F32EE-C5C5-4AA5-88FE-F0C46CC4C235}|API_CRUD\\API_CRUD.csproj|solutionrelative:api_crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SemestreModelsController.cs",
+              "DocumentMoniker": "C:\\Users\\prograsei\\Documents\\API_CRUD\\API_CRUD\\Controllers\\SemestreModelsController.cs",
+              "RelativeDocumentMoniker": "API_CRUD\\Controllers\\SemestreModelsController.cs",
+              "ToolTip": "C:\\Users\\prograsei\\Documents\\API_CRUD\\API_CRUD\\Controllers\\SemestreModelsController.cs",
+              "RelativeToolTip": "API_CRUD\\Controllers\\SemestreModelsController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswBAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:52:22.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SemestreModel.cs",
+              "DocumentMoniker": "C:\\Users\\prograsei\\Documents\\API_CRUD\\API_CRUD\\Models\\SemestreModel.cs",
+              "RelativeDocumentMoniker": "API_CRUD\\Models\\SemestreModel.cs",
+              "ToolTip": "C:\\Users\\prograsei\\Documents\\API_CRUD\\API_CRUD\\Models\\SemestreModel.cs",
+              "RelativeToolTip": "API_CRUD\\Models\\SemestreModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T18:34:00.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClassConexion.cs",
+              "DocumentMoniker": "C:\\Users\\prograsei\\Documents\\API_CRUD\\API_CRUD\\Data\\ClassConexion.cs",
+              "RelativeDocumentMoniker": "API_CRUD\\Data\\ClassConexion.cs",
+              "ToolTip": "C:\\Users\\prograsei\\Documents\\API_CRUD\\API_CRUD\\Data\\ClassConexion.cs",
+              "RelativeToolTip": "API_CRUD\\Data\\ClassConexion.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T18:25:05.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\prograsei\\Documents\\API_CRUD\\API_CRUD\\Program.cs",
+              "RelativeDocumentMoniker": "API_CRUD\\Program.cs",
+              "ToolTip": "C:\\Users\\prograsei\\Documents\\API_CRUD\\API_CRUD\\Program.cs",
+              "RelativeToolTip": "API_CRUD\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T17:59:44.103Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

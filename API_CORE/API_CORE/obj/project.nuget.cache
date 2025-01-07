@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "B7Yy2p5+ULOPxauMA3uTVMMNpOANTXVTMCRV2dGLjFVu4sGpIhfnaseFcbIHybP+ldPE+BtstFRlFOmY4k8U4w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Oscar\\Downloads\\Cosillas-20250107T063025Z-001\\Cosillas\\API_CORE\\API_CORE\\API_CORE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Oscar\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

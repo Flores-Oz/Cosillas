@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetGeneral" targetNamespace="http://tempuri.org/DataSetGeneral.xsd" xmlns:mstns="http://tempuri.org/DataSetGeneral.xsd" xmlns="http://tempuri.org/DataSetGeneral.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="6" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="Corto1BD23ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Corto1BD23ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.Corto1BD23ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="Corto1BD23ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Corto1BD23ConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.Corto1BD23ConnectionString1.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="Corto1BD23ConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Corto1BD23ConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.Corto1BD23ConnectionString2.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="Corto1BD23ConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Corto1BD23ConnectionString3 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.Corto1BD23ConnectionString3.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="Corto1BD23ConnectionString4" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Corto1BD23ConnectionString4 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.Corto1BD23ConnectionString4.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="Corto1BD23ConnectionString5" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Corto1BD23ConnectionString5 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.Corto1BD23ConnectionString5.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="Corto1BD23ConnectionString6" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Corto1BD23ConnectionString6 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.Corto1BD23ConnectionString6.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AlumnoTableAdapter" GeneratorDataComponentClassName="AlumnoTableAdapter" Name="Alumno" UserDataComponentName="AlumnoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString (Web.config)" DbObjectName="Corto1BD23.dbo.Alumno" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Alumno] WHERE (([Carne] = @Original_Carne))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Carne" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Carne" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Alumno] ([Carne], [Nombre1], [Nombre2], [Apellido1], [Apellido2], [Fecha_Nac], [Celular], [email], [estado]) VALUES (@Carne, @Nombre1, @Nombre2, @Apellido1, @Apellido2, @Fecha_Nac, @Celular, @email, @estado)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Carne" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Carne" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nombre1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nombre1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nombre2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nombre2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Apellido1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Apellido1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Apellido2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Apellido2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Fecha_Nac" Precision="0" ProviderType="SmallDateTime" Scale="0" Size="0" SourceColumn="Fecha_Nac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Celular" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Celular" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@email" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@estado" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Carne, Nombre1, Nombre2, Apellido1, Apellido2, Fecha_Nac, Celular, email, estado FROM dbo.Alumno</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Alumno] SET [Carne] = @Carne, [Nombre1] = @Nombre1, [Nombre2] = @Nombre2, [Apellido1] = @Apellido1, [Apellido2] = @Apellido2, [Fecha_Nac] = @Fecha_Nac, [Celular] = @Celular, [email] = @email, [estado] = @estado WHERE (([Carne] = @Original_Carne))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Carne" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Carne" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nombre1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nombre1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nombre2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nombre2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Apellido1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Apellido1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Apellido2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Apellido2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Fecha_Nac" Precision="0" ProviderType="SmallDateTime" Scale="0" Size="0" SourceColumn="Fecha_Nac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Celular" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Celular" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@email" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@estado" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Carne" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Carne" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Carne" DataSetColumn="Carne" />
+              <Mapping SourceColumn="Nombre1" DataSetColumn="Nombre1" />
+              <Mapping SourceColumn="Nombre2" DataSetColumn="Nombre2" />
+              <Mapping SourceColumn="Apellido1" DataSetColumn="Apellido1" />
+              <Mapping SourceColumn="Apellido2" DataSetColumn="Apellido2" />
+              <Mapping SourceColumn="Fecha_Nac" DataSetColumn="Fecha_Nac" />
+              <Mapping SourceColumn="Celular" DataSetColumn="Celular" />
+              <Mapping SourceColumn="email" DataSetColumn="email" />
+              <Mapping SourceColumn="estado" DataSetColumn="estado" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ActualizarAlumno" Modifier="Public" Name="ActualizarAlumno" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ActualizarAlumno">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE Alumno
+SET       Nombre1 = @Nombre1, Nombre2 = @Nombre2, Apellido1 = @Apellido1, Apellido2 = @Apellido2, Fecha_Nac = @Fecha_Nac, Celular = @Celular, email = @email, estado = @estado
+WHERE (Carne = @Original_Carne)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Nombre1" ColumnName="Nombre1" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Nombre1" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Nombre1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Nombre2" ColumnName="Nombre2" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Nombre2" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Nombre2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Apellido1" ColumnName="Apellido1" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Apellido1" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Apellido1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Apellido2" ColumnName="Apellido2" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Apellido2" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Apellido2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Fecha_Nac" ColumnName="Fecha_Nac" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="smalldatetime" DbType="DateTime" Direction="Input" ParameterName="@Fecha_Nac" Precision="0" ProviderType="SmallDateTime" Scale="0" Size="4" SourceColumn="Fecha_Nac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Celular" ColumnName="Celular" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(12)" DbType="String" Direction="Input" ParameterName="@Celular" Precision="0" ProviderType="NVarChar" Scale="0" Size="12" SourceColumn="Celular" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="email" ColumnName="email" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(100)" DbType="String" Direction="Input" ParameterName="@email" Precision="0" ProviderType="NVarChar" Scale="0" Size="100" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="estado" ColumnName="estado" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@estado" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Original_Carne" ColumnName="Carne" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(15)" DbType="String" Direction="Input" ParameterName="@Original_Carne" Precision="0" ProviderType="NVarChar" Scale="0" Size="15" SourceColumn="Carne" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="CambiarEstadoAlumno" Modifier="Public" Name="CambiarEstadoAlumno" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="CambiarEstadoAlumno">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE Alumno
+SET       estado = @estado
+WHERE (Carne = @Original_Carne)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="estado" ColumnName="estado" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@estado" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Original_Carne" ColumnName="Carne" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(15)" DbType="String" Direction="Input" ParameterName="@Original_Carne" Precision="0" ProviderType="NVarChar" Scale="0" Size="15" SourceColumn="Carne" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertarAlumno" Modifier="Public" Name="InsertarAlumno" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="InsertarAlumno">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO Alumno
+             (Carne, Nombre1, Nombre2, Apellido1, Apellido2, Fecha_Nac, Celular, email, estado)
+VALUES (@Carne,@Nombre1,@Nombre2,@Apellido1,@Apellido2,@Fecha_Nac,@Celular,@email,@estado)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Carne" ColumnName="Carne" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(15)" DbType="String" Direction="Input" ParameterName="@Carne" Precision="0" ProviderType="NVarChar" Scale="0" Size="15" SourceColumn="Carne" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Nombre1" ColumnName="Nombre1" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Nombre1" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Nombre1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Nombre2" ColumnName="Nombre2" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Nombre2" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Nombre2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Apellido1" ColumnName="Apellido1" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Apellido1" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Apellido1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Apellido2" ColumnName="Apellido2" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Apellido2" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Apellido2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Fecha_Nac" ColumnName="Fecha_Nac" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="smalldatetime" DbType="DateTime" Direction="Input" ParameterName="@Fecha_Nac" Precision="0" ProviderType="SmallDateTime" Scale="0" Size="4" SourceColumn="Fecha_Nac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Celular" ColumnName="Celular" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(12)" DbType="String" Direction="Input" ParameterName="@Celular" Precision="0" ProviderType="NVarChar" Scale="0" Size="12" SourceColumn="Celular" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="email" ColumnName="email" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="nvarchar(100)" DbType="String" Direction="Input" ParameterName="@email" Precision="0" ProviderType="NVarChar" Scale="0" Size="100" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="estado" ColumnName="estado" DataSourceName="Corto1BD23.dbo.Alumno" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@estado" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Asigna_CursoTableAdapter" GeneratorDataComponentClassName="Asigna_CursoTableAdapter" Name="Asigna_Curso" UserDataComponentName="Asigna_CursoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString1 (Web.config)" DbObjectName="Corto1BD23.dbo.Asigna_Curso" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Asigna_Curso] WHERE (([id_alum_curso] = @Original_id_alum_curso))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id_alum_curso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id_alum_curso" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Asigna_Curso] ([id_alum_curso], [Carne], [Id_Curso], [Zona], [Final], [Total], [Literal], [Argumento], [fecha_asignacion], [fecha_ingreso_nota]) VALUES (@id_alum_curso, @Carne, @Id_Curso, @Zona, @Final, @Total, @Literal, @Argumento, @fecha_asignacion, @fecha_ingreso_nota)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@id_alum_curso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id_alum_curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Carne" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Carne" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Id_Curso" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Zona" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Zona" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Final" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Final" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Total" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Total" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Literal" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Literal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Argumento" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Argumento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@fecha_asignacion" Precision="0" ProviderType="SmallDateTime" Scale="0" Size="0" SourceColumn="fecha_asignacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@fecha_ingreso_nota" Precision="0" ProviderType="SmallDateTime" Scale="0" Size="0" SourceColumn="fecha_ingreso_nota" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_alum_curso, Carne, Id_Curso, Zona, Final, Total, Literal, Argumento, fecha_asignacion, fecha_ingreso_nota FROM dbo.Asigna_Curso</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Asigna_Curso] SET [id_alum_curso] = @id_alum_curso, [Carne] = @Carne, [Id_Curso] = @Id_Curso, [Zona] = @Zona, [Final] = @Final, [Total] = @Total, [Literal] = @Literal, [Argumento] = @Argumento, [fecha_asignacion] = @fecha_asignacion, [fecha_ingreso_nota] = @fecha_ingreso_nota WHERE (([id_alum_curso] = @Original_id_alum_curso))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@id_alum_curso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id_alum_curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Carne" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Carne" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Id_Curso" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Zona" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Zona" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Final" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Final" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Total" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Total" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Literal" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Literal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Argumento" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Argumento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@fecha_asignacion" Precision="0" ProviderType="SmallDateTime" Scale="0" Size="0" SourceColumn="fecha_asignacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@fecha_ingreso_nota" Precision="0" ProviderType="SmallDateTime" Scale="0" Size="0" SourceColumn="fecha_ingreso_nota" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id_alum_curso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id_alum_curso" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_alum_curso" DataSetColumn="id_alum_curso" />
+              <Mapping SourceColumn="Carne" DataSetColumn="Carne" />
+              <Mapping SourceColumn="Id_Curso" DataSetColumn="Id_Curso" />
+              <Mapping SourceColumn="Zona" DataSetColumn="Zona" />
+              <Mapping SourceColumn="Final" DataSetColumn="Final" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+              <Mapping SourceColumn="Literal" DataSetColumn="Literal" />
+              <Mapping SourceColumn="Argumento" DataSetColumn="Argumento" />
+              <Mapping SourceColumn="fecha_asignacion" DataSetColumn="fecha_asignacion" />
+              <Mapping SourceColumn="fecha_ingreso_nota" DataSetColumn="fecha_ingreso_nota" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CarreraTableAdapter" GeneratorDataComponentClassName="CarreraTableAdapter" Name="Carrera" UserDataComponentName="CarreraTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString2 (Web.config)" DbObjectName="Corto1BD23.dbo.Carrera" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Carrera] WHERE (([Id_Carrera] = @Original_Id_Carrera))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Id_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Carrera" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Carrera] ([Id_Carrera], [Nombre_Carrera], [Estado_Carrera]) VALUES (@Id_Carrera, @Nombre_Carrera, @Estado_Carrera)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Id_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nombre_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nombre_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Estado_Carrera" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Estado_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id_Carrera, Nombre_Carrera, Estado_Carrera FROM dbo.Carrera</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Carrera] SET [Id_Carrera] = @Id_Carrera, [Nombre_Carrera] = @Nombre_Carrera, [Estado_Carrera] = @Estado_Carrera WHERE (([Id_Carrera] = @Original_Id_Carrera))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Id_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nombre_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nombre_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Estado_Carrera" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Estado_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Id_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Carrera" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Carrera" DataSetColumn="Id_Carrera" />
+              <Mapping SourceColumn="Nombre_Carrera" DataSetColumn="Nombre_Carrera" />
+              <Mapping SourceColumn="Estado_Carrera" DataSetColumn="Estado_Carrera" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString2 (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ActualizarEstadoCarrera" Modifier="Public" Name="ActualizarEstadoCarrera" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ActualizarEstadoCarrera">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE Carrera
+SET       Estado_Carrera = @Estado_Carrera
+WHERE (Id_Carrera = @Original_Id_Carrera)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Estado_Carrera" ColumnName="Estado_Carrera" DataSourceName="Corto1BD23.dbo.Carrera" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@Estado_Carrera" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="Estado_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Original_Id_Carrera" ColumnName="Id_Carrera" DataSourceName="Corto1BD23.dbo.Carrera" DataTypeServer="nvarchar(2)" DbType="String" Direction="Input" ParameterName="@Original_Id_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="2" SourceColumn="Id_Carrera" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString2 (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertarCarrera" Modifier="Public" Name="InsertarCarrera" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertarCarrera">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO [dbo].[Carrera] ([Id_Carrera], [Nombre_Carrera], [Estado_Carrera]) VALUES (@Id_Carrera, @Nombre_Carrera, @Estado_Carrera)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id_Carrera" ColumnName="Id_Carrera" DataSourceName="Corto1BD23.dbo.Carrera" DataTypeServer="nvarchar(2)" DbType="String" Direction="Input" ParameterName="@Id_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="2" SourceColumn="Id_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Nombre_Carrera" ColumnName="Nombre_Carrera" DataSourceName="Corto1BD23.dbo.Carrera" DataTypeServer="nvarchar(150)" DbType="String" Direction="Input" ParameterName="@Nombre_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="150" SourceColumn="Nombre_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Estado_Carrera" ColumnName="Estado_Carrera" DataSourceName="Corto1BD23.dbo.Carrera" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@Estado_Carrera" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="Estado_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CursoTableAdapter" GeneratorDataComponentClassName="CursoTableAdapter" Name="Curso" UserDataComponentName="CursoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString3 (Web.config)" DbObjectName="Corto1BD23.dbo.Curso" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Curso] WHERE (([Id_Curso] = @Original_Id_Curso))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Id_Curso" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Curso" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Curso] ([Id_Curso], [Nombre_Curso], [Creditos_Curso], [Id_Carrera], [Id_Semestre]) VALUES (@Id_Curso, @Nombre_Curso, @Creditos_Curso, @Id_Carrera, @Id_Semestre)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Id_Curso" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nombre_Curso" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nombre_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Creditos_Curso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Creditos_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Id_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Id_Semestre" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id_Semestre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id_Curso, Nombre_Curso, Creditos_Curso, Id_Carrera, Id_Semestre FROM dbo.Curso</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Curso] SET [Id_Curso] = @Id_Curso, [Nombre_Curso] = @Nombre_Curso, [Creditos_Curso] = @Creditos_Curso, [Id_Carrera] = @Id_Carrera, [Id_Semestre] = @Id_Semestre WHERE (([Id_Curso] = @Original_Id_Curso))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Id_Curso" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nombre_Curso" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nombre_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Creditos_Curso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Creditos_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Id_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Id_Semestre" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id_Semestre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Id_Curso" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Id_Curso" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Curso" DataSetColumn="Id_Curso" />
+              <Mapping SourceColumn="Nombre_Curso" DataSetColumn="Nombre_Curso" />
+              <Mapping SourceColumn="Creditos_Curso" DataSetColumn="Creditos_Curso" />
+              <Mapping SourceColumn="Id_Carrera" DataSetColumn="Id_Carrera" />
+              <Mapping SourceColumn="Id_Semestre" DataSetColumn="Id_Semestre" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString3 (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertarCurso" Modifier="Public" Name="InsertarCurso" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertarCurso">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO [dbo].[Curso] ([Id_Curso], [Nombre_Curso], [Creditos_Curso], [Id_Carrera], [Id_Semestre]) VALUES (@Id_Curso, @Nombre_Curso, @Creditos_Curso, @Id_Carrera, @Id_Semestre);
+SELECT Id_Curso, Nombre_Curso, Creditos_Curso, Id_Carrera, Id_Semestre FROM Curso WHERE (Id_Curso = @Id_Curso)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id_Curso" ColumnName="Id_Curso" DataSourceName="Corto1BD23.dbo.Curso" DataTypeServer="nvarchar(10)" DbType="String" Direction="Input" ParameterName="@Id_Curso" Precision="0" ProviderType="NVarChar" Scale="0" Size="10" SourceColumn="Id_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Nombre_Curso" ColumnName="Nombre_Curso" DataSourceName="Corto1BD23.dbo.Curso" DataTypeServer="nvarchar(100)" DbType="String" Direction="Input" ParameterName="@Nombre_Curso" Precision="0" ProviderType="NVarChar" Scale="0" Size="100" SourceColumn="Nombre_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Creditos_Curso" ColumnName="Creditos_Curso" DataSourceName="Corto1BD23.dbo.Curso" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Creditos_Curso" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Creditos_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id_Carrera" ColumnName="Id_Carrera" DataSourceName="Corto1BD23.dbo.Curso" DataTypeServer="nvarchar(2)" DbType="String" Direction="Input" ParameterName="@Id_Carrera" Precision="0" ProviderType="NVarChar" Scale="0" Size="2" SourceColumn="Id_Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id_Semestre" ColumnName="Id_Semestre" DataSourceName="Corto1BD23.dbo.Curso" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id_Semestre" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id_Semestre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DepartamentoTableAdapter" GeneratorDataComponentClassName="DepartamentoTableAdapter" Name="Departamento" UserDataComponentName="DepartamentoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString4 (Web.config)" DbObjectName="Corto1BD23.dbo.Departamento" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Departamento] ([Codigo], [Departamento]) VALUES (@Codigo, @Departamento)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Codigo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Codigo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Departamento" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Departamento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Codigo, Departamento FROM dbo.Departamento</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Codigo" DataSetColumn="Codigo" />
+              <Mapping SourceColumn="Departamento" DataSetColumn="Departamento" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MunicipioTableAdapter" GeneratorDataComponentClassName="MunicipioTableAdapter" Name="Municipio" UserDataComponentName="MunicipioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString5 (Web.config)" DbObjectName="Corto1BD23.dbo.Municipio" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Municipio] ([Codigo_Municipio], [Municipio], [Codigo]) VALUES (@Codigo_Municipio, @Municipio, @Codigo)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Codigo_Municipio" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Codigo_Municipio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Municipio" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Municipio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Codigo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Codigo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Codigo_Municipio, Municipio, Codigo FROM dbo.Municipio</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Codigo_Municipio" DataSetColumn="Codigo_Municipio" />
+              <Mapping SourceColumn="Municipio" DataSetColumn="Municipio" />
+              <Mapping SourceColumn="Codigo" DataSetColumn="Codigo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SemestreTableAdapter" GeneratorDataComponentClassName="SemestreTableAdapter" Name="Semestre" UserDataComponentName="SemestreTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString6 (Web.config)" DbObjectName="Corto1BD23.dbo.Semestre" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Semestre] WHERE (([Id_Semestre] = @Original_Id_Semestre))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id_Semestre" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id_Semestre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Semestre] ([Id_Semestre], [Nombre_Semestre]) VALUES (@Id_Semestre, @Nombre_Semestre)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Id_Semestre" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id_Semestre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nombre_Semestre" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nombre_Semestre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id_Semestre, Nombre_Semestre FROM dbo.Semestre</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Semestre] SET [Id_Semestre] = @Id_Semestre, [Nombre_Semestre] = @Nombre_Semestre WHERE (([Id_Semestre] = @Original_Id_Semestre))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Id_Semestre" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id_Semestre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nombre_Semestre" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nombre_Semestre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id_Semestre" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id_Semestre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Semestre" DataSetColumn="Id_Semestre" />
+              <Mapping SourceColumn="Nombre_Semestre" DataSetColumn="Nombre_Semestre" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString6 (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertarSemestre" Modifier="Public" Name="InsertarSemestre" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertarSemestre">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO Semestre
+             (Id_Semestre, Nombre_Semestre)
+VALUES (@Id_Semestre,@Nombre_Semestre)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id_Semestre" ColumnName="Id_Semestre" DataSourceName="Corto1BD23.dbo.Semestre" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id_Semestre" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id_Semestre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Nombre_Semestre" ColumnName="Nombre_Semestre" DataSourceName="Corto1BD23.dbo.Semestre" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Nombre_Semestre" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Nombre_Semestre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Municipio1TableAdapter" GeneratorDataComponentClassName="Municipio1TableAdapter" Name="Municipio1" UserDataComponentName="Municipio1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString (Web.config)" DbObjectName="Corto1BD23.dbo.Municipio" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Codigo_Municipio, Municipio
+FROM   Municipio</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Codigo_Municipio" DataSetColumn="Codigo_Municipio" />
+              <Mapping SourceColumn="Municipio" DataSetColumn="Municipio" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Corto1BD23ConnectionString (Web.config)" DbObjectName="Corto1BD23.dbo.Municipio" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="ObtenerMuniCod" GetMethodModifier="Public" GetMethodName="ObtenerMuniCod" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="ObtenerMuniCod" UserSourceName="ObtenerMuniCod">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Codigo_Municipio, Municipio
+FROM   Municipio
+WHERE (Codigo = @cod)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="cod" ColumnName="Codigo" DataSourceName="Corto1BD23.dbo.Municipio" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@cod" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Codigo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetGeneral" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetGeneral" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetGeneral">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Alumno" msprop:Generator_RowEvHandlerName="AlumnoRowChangeEventHandler" msprop:Generator_RowDeletedName="AlumnoRowDeleted" msprop:Generator_RowDeletingName="AlumnoRowDeleting" msprop:Generator_RowEvArgName="AlumnoRowChangeEvent" msprop:Generator_TablePropName="Alumno" msprop:Generator_RowChangedName="AlumnoRowChanged" msprop:Generator_UserTableName="Alumno" msprop:Generator_RowChangingName="AlumnoRowChanging" msprop:Generator_RowClassName="AlumnoRow" msprop:Generator_TableClassName="AlumnoDataTable" msprop:Generator_TableVarName="tableAlumno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Carne" msprop:Generator_ColumnPropNameInTable="CarneColumn" msprop:Generator_ColumnPropNameInRow="Carne" msprop:Generator_UserColumnName="Carne" msprop:Generator_ColumnVarNameInTable="columnCarne">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre1" msprop:Generator_ColumnPropNameInTable="Nombre1Column" msprop:Generator_ColumnPropNameInRow="Nombre1" msprop:Generator_UserColumnName="Nombre1" msprop:Generator_ColumnVarNameInTable="columnNombre1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre2" msprop:Generator_ColumnPropNameInTable="Nombre2Column" msprop:Generator_ColumnPropNameInRow="Nombre2" msprop:Generator_UserColumnName="Nombre2" msprop:Generator_ColumnVarNameInTable="columnNombre2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido1" msprop:Generator_ColumnPropNameInTable="Apellido1Column" msprop:Generator_ColumnPropNameInRow="Apellido1" msprop:Generator_UserColumnName="Apellido1" msprop:Generator_ColumnVarNameInTable="columnApellido1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido2" msprop:Generator_ColumnPropNameInTable="Apellido2Column" msprop:Generator_ColumnPropNameInRow="Apellido2" msprop:Generator_UserColumnName="Apellido2" msprop:Generator_ColumnVarNameInTable="columnApellido2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha_Nac" msprop:Generator_ColumnPropNameInTable="Fecha_NacColumn" msprop:Generator_ColumnPropNameInRow="Fecha_Nac" msprop:Generator_UserColumnName="Fecha_Nac" msprop:Generator_ColumnVarNameInTable="columnFecha_Nac" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Celular" msprop:Generator_ColumnPropNameInTable="CelularColumn" msprop:Generator_ColumnPropNameInRow="Celular" msprop:Generator_UserColumnName="Celular" msprop:Generator_ColumnVarNameInTable="columnCelular" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_UserColumnName="email" msprop:Generator_ColumnVarNameInTable="columnemail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_UserColumnName="estado" msprop:Generator_ColumnVarNameInTable="columnestado" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Asigna_Curso" msprop:Generator_RowEvHandlerName="Asigna_CursoRowChangeEventHandler" msprop:Generator_RowDeletedName="Asigna_CursoRowDeleted" msprop:Generator_RowDeletingName="Asigna_CursoRowDeleting" msprop:Generator_RowEvArgName="Asigna_CursoRowChangeEvent" msprop:Generator_TablePropName="Asigna_Curso" msprop:Generator_RowChangedName="Asigna_CursoRowChanged" msprop:Generator_UserTableName="Asigna_Curso" msprop:Generator_RowChangingName="Asigna_CursoRowChanging" msprop:Generator_RowClassName="Asigna_CursoRow" msprop:Generator_TableClassName="Asigna_CursoDataTable" msprop:Generator_TableVarName="tableAsigna_Curso">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_alum_curso" msprop:Generator_ColumnPropNameInTable="id_alum_cursoColumn" msprop:Generator_ColumnPropNameInRow="id_alum_curso" msprop:Generator_UserColumnName="id_alum_curso" msprop:Generator_ColumnVarNameInTable="columnid_alum_curso" type="xs:int" />
+              <xs:element name="Carne" msprop:Generator_ColumnPropNameInTable="CarneColumn" msprop:Generator_ColumnPropNameInRow="Carne" msprop:Generator_UserColumnName="Carne" msprop:Generator_ColumnVarNameInTable="columnCarne">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Curso" msprop:Generator_ColumnPropNameInTable="Id_CursoColumn" msprop:Generator_ColumnPropNameInRow="Id_Curso" msprop:Generator_UserColumnName="Id_Curso" msprop:Generator_ColumnVarNameInTable="columnId_Curso">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Zona" msprop:Generator_ColumnPropNameInTable="ZonaColumn" msprop:Generator_ColumnPropNameInRow="Zona" msprop:Generator_UserColumnName="Zona" msprop:Generator_ColumnVarNameInTable="columnZona" type="xs:int" minOccurs="0" />
+              <xs:element name="Final" msprop:Generator_ColumnPropNameInTable="FinalColumn" msprop:Generator_ColumnPropNameInRow="Final" msprop:Generator_UserColumnName="Final" msprop:Generator_ColumnVarNameInTable="columnFinal" type="xs:int" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" type="xs:int" minOccurs="0" />
+              <xs:element name="Literal" msprop:Generator_ColumnPropNameInTable="LiteralColumn" msprop:Generator_ColumnPropNameInRow="Literal" msprop:Generator_UserColumnName="Literal" msprop:Generator_ColumnVarNameInTable="columnLiteral" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Argumento" msprop:Generator_ColumnPropNameInTable="ArgumentoColumn" msprop:Generator_ColumnPropNameInRow="Argumento" msprop:Generator_UserColumnName="Argumento" msprop:Generator_ColumnVarNameInTable="columnArgumento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fecha_asignacion" msprop:Generator_ColumnPropNameInTable="fecha_asignacionColumn" msprop:Generator_ColumnPropNameInRow="fecha_asignacion" msprop:Generator_UserColumnName="fecha_asignacion" msprop:Generator_ColumnVarNameInTable="columnfecha_asignacion" type="xs:dateTime" />
+              <xs:element name="fecha_ingreso_nota" msprop:Generator_ColumnPropNameInTable="fecha_ingreso_notaColumn" msprop:Generator_ColumnPropNameInRow="fecha_ingreso_nota" msprop:Generator_UserColumnName="fecha_ingreso_nota" msprop:Generator_ColumnVarNameInTable="columnfecha_ingreso_nota" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Carrera" msprop:Generator_RowEvHandlerName="CarreraRowChangeEventHandler" msprop:Generator_RowDeletedName="CarreraRowDeleted" msprop:Generator_RowDeletingName="CarreraRowDeleting" msprop:Generator_RowEvArgName="CarreraRowChangeEvent" msprop:Generator_TablePropName="Carrera" msprop:Generator_RowChangedName="CarreraRowChanged" msprop:Generator_UserTableName="Carrera" msprop:Generator_RowChangingName="CarreraRowChanging" msprop:Generator_RowClassName="CarreraRow" msprop:Generator_TableClassName="CarreraDataTable" msprop:Generator_TableVarName="tableCarrera">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Carrera" msprop:Generator_ColumnPropNameInTable="Id_CarreraColumn" msprop:Generator_ColumnPropNameInRow="Id_Carrera" msprop:Generator_UserColumnName="Id_Carrera" msprop:Generator_ColumnVarNameInTable="columnId_Carrera">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_Carrera" msprop:Generator_ColumnPropNameInTable="Nombre_CarreraColumn" msprop:Generator_ColumnPropNameInRow="Nombre_Carrera" msprop:Generator_UserColumnName="Nombre_Carrera" msprop:Generator_ColumnVarNameInTable="columnNombre_Carrera">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado_Carrera" msprop:Generator_ColumnPropNameInTable="Estado_CarreraColumn" msprop:Generator_ColumnPropNameInRow="Estado_Carrera" msprop:Generator_UserColumnName="Estado_Carrera" msprop:Generator_ColumnVarNameInTable="columnEstado_Carrera" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Curso" msprop:Generator_RowEvHandlerName="CursoRowChangeEventHandler" msprop:Generator_RowDeletedName="CursoRowDeleted" msprop:Generator_RowDeletingName="CursoRowDeleting" msprop:Generator_RowEvArgName="CursoRowChangeEvent" msprop:Generator_TablePropName="Curso" msprop:Generator_RowChangedName="CursoRowChanged" msprop:Generator_UserTableName="Curso" msprop:Generator_RowChangingName="CursoRowChanging" msprop:Generator_RowClassName="CursoRow" msprop:Generator_TableClassName="CursoDataTable" msprop:Generator_TableVarName="tableCurso">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Curso" msprop:Generator_ColumnPropNameInTable="Id_CursoColumn" msprop:Generator_ColumnPropNameInRow="Id_Curso" msprop:Generator_UserColumnName="Id_Curso" msprop:Generator_ColumnVarNameInTable="columnId_Curso">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_Curso" msprop:Generator_ColumnPropNameInTable="Nombre_CursoColumn" msprop:Generator_ColumnPropNameInRow="Nombre_Curso" msprop:Generator_UserColumnName="Nombre_Curso" msprop:Generator_ColumnVarNameInTable="columnNombre_Curso">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Creditos_Curso" msprop:Generator_ColumnPropNameInTable="Creditos_CursoColumn" msprop:Generator_ColumnPropNameInRow="Creditos_Curso" msprop:Generator_UserColumnName="Creditos_Curso" msprop:Generator_ColumnVarNameInTable="columnCreditos_Curso" type="xs:int" />
+              <xs:element name="Id_Carrera" msprop:Generator_ColumnPropNameInTable="Id_CarreraColumn" msprop:Generator_ColumnPropNameInRow="Id_Carrera" msprop:Generator_UserColumnName="Id_Carrera" msprop:Generator_ColumnVarNameInTable="columnId_Carrera">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Semestre" msprop:Generator_ColumnPropNameInTable="Id_SemestreColumn" msprop:Generator_ColumnPropNameInRow="Id_Semestre" msprop:Generator_UserColumnName="Id_Semestre" msprop:Generator_ColumnVarNameInTable="columnId_Semestre" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Departamento" msprop:Generator_RowEvHandlerName="DepartamentoRowChangeEventHandler" msprop:Generator_RowDeletedName="DepartamentoRowDeleted" msprop:Generator_RowDeletingName="DepartamentoRowDeleting" msprop:Generator_RowEvArgName="DepartamentoRowChangeEvent" msprop:Generator_TablePropName="Departamento" msprop:Generator_RowChangedName="DepartamentoRowChanged" msprop:Generator_UserTableName="Departamento" msprop:Generator_RowChangingName="DepartamentoRowChanging" msprop:Generator_RowClassName="DepartamentoRow" msprop:Generator_TableClassName="DepartamentoDataTable" msprop:Generator_TableVarName="tableDepartamento">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_UserColumnName="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" type="xs:int" minOccurs="0" />
+              <xs:element name="Departamento" msprop:Generator_ColumnPropNameInTable="DepartamentoColumn" msprop:Generator_ColumnPropNameInRow="Departamento" msprop:Generator_UserColumnName="Departamento" msprop:Generator_ColumnVarNameInTable="columnDepartamento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Municipio" msprop:Generator_RowEvHandlerName="MunicipioRowChangeEventHandler" msprop:Generator_RowDeletedName="MunicipioRowDeleted" msprop:Generator_RowDeletingName="MunicipioRowDeleting" msprop:Generator_RowEvArgName="MunicipioRowChangeEvent" msprop:Generator_TablePropName="Municipio" msprop:Generator_RowChangedName="MunicipioRowChanged" msprop:Generator_UserTableName="Municipio" msprop:Generator_RowChangingName="MunicipioRowChanging" msprop:Generator_RowClassName="MunicipioRow" msprop:Generator_TableClassName="MunicipioDataTable" msprop:Generator_TableVarName="tableMunicipio">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo_Municipio" msprop:Generator_ColumnPropNameInTable="Codigo_MunicipioColumn" msprop:Generator_ColumnPropNameInRow="Codigo_Municipio" msprop:Generator_UserColumnName="Codigo_Municipio" msprop:Generator_ColumnVarNameInTable="columnCodigo_Municipio" type="xs:int" minOccurs="0" />
+              <xs:element name="Municipio" msprop:Generator_ColumnPropNameInTable="MunicipioColumn" msprop:Generator_ColumnPropNameInRow="Municipio" msprop:Generator_UserColumnName="Municipio" msprop:Generator_ColumnVarNameInTable="columnMunicipio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_UserColumnName="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Semestre" msprop:Generator_RowEvHandlerName="SemestreRowChangeEventHandler" msprop:Generator_RowDeletedName="SemestreRowDeleted" msprop:Generator_RowDeletingName="SemestreRowDeleting" msprop:Generator_RowEvArgName="SemestreRowChangeEvent" msprop:Generator_TablePropName="Semestre" msprop:Generator_RowChangedName="SemestreRowChanged" msprop:Generator_UserTableName="Semestre" msprop:Generator_RowChangingName="SemestreRowChanging" msprop:Generator_RowClassName="SemestreRow" msprop:Generator_TableClassName="SemestreDataTable" msprop:Generator_TableVarName="tableSemestre">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Semestre" msprop:Generator_ColumnPropNameInTable="Id_SemestreColumn" msprop:Generator_ColumnPropNameInRow="Id_Semestre" msprop:Generator_UserColumnName="Id_Semestre" msprop:Generator_ColumnVarNameInTable="columnId_Semestre" type="xs:int" />
+              <xs:element name="Nombre_Semestre" msprop:Generator_ColumnPropNameInTable="Nombre_SemestreColumn" msprop:Generator_ColumnPropNameInRow="Nombre_Semestre" msprop:Generator_UserColumnName="Nombre_Semestre" msprop:Generator_ColumnVarNameInTable="columnNombre_Semestre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Municipio1" msprop:Generator_RowEvHandlerName="Municipio1RowChangeEventHandler" msprop:Generator_RowDeletedName="Municipio1RowDeleted" msprop:Generator_RowDeletingName="Municipio1RowDeleting" msprop:Generator_RowEvArgName="Municipio1RowChangeEvent" msprop:Generator_TablePropName="Municipio1" msprop:Generator_RowChangedName="Municipio1RowChanged" msprop:Generator_RowChangingName="Municipio1RowChanging" msprop:Generator_TableClassName="Municipio1DataTable" msprop:Generator_RowClassName="Municipio1Row" msprop:Generator_TableVarName="tableMunicipio1" msprop:Generator_UserTableName="Municipio1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo_Municipio" msprop:Generator_ColumnPropNameInRow="Codigo_Municipio" msprop:Generator_ColumnPropNameInTable="Codigo_MunicipioColumn" msprop:Generator_ColumnVarNameInTable="columnCodigo_Municipio" msprop:Generator_UserColumnName="Codigo_Municipio" type="xs:int" minOccurs="0" />
+              <xs:element name="Municipio" msprop:Generator_ColumnPropNameInRow="Municipio" msprop:Generator_ColumnPropNameInTable="MunicipioColumn" msprop:Generator_ColumnVarNameInTable="columnMunicipio" msprop:Generator_UserColumnName="Municipio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Alumno" />
+      <xs:field xpath="mstns:Carne" />
+    </xs:unique>
+    <xs:unique name="Asigna_Curso_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Asigna_Curso" />
+      <xs:field xpath="mstns:id_alum_curso" />
+    </xs:unique>
+    <xs:unique name="Carrera_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Carrera" />
+      <xs:field xpath="mstns:Id_Carrera" />
+    </xs:unique>
+    <xs:unique name="Curso_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Curso" />
+      <xs:field xpath="mstns:Id_Curso" />
+    </xs:unique>
+    <xs:unique name="Semestre_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Semestre" />
+      <xs:field xpath="mstns:Id_Semestre" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

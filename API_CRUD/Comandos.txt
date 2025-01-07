@@ -1,0 +1,15 @@
+//Dependencias 
+dotnet add package Microsoft.Data.SqlClient --version 5.2.2
+dotnet add package Microsoft.DotNet.Scaffolding.Shared --version 8.0.6
+dotnet add package Microsoft.EntityFrameworkCore --version 8.0.10
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.10
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.10
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.10
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 8.0.6
+dotnet add package Swashbuckle.AspNetCore --version 6.4.0
+dotnet add package System.Text.Json
+
+//Codigo para despues del ContextCreo
+dotnet ef migrations add Inicial --project C:\Users\prograsei\Documents\API_CRUD\API_CRUD\API_CRUD.csproj
+
+

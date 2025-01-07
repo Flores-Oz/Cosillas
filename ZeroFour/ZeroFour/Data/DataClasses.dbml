@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Corto1BD23" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.Semestre" Member="Semestres">
+    <Type Name="Semestre">
+      <Column Name="Id_Semestre" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre_Semestre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Semestre_Curso" Member="Cursos" ThisKey="Id_Semestre" OtherKey="Id_Semestre" Type="Curso" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Municipio" Member="Municipios">
+    <Type Name="Municipio">
+      <Column Name="Codigo_Municipio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Municipio" Member="Municipio1" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Departamento" Member="Departamentos">
+    <Type Name="Departamento">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Departamento" Member="Departamento1" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Curso" Member="Cursos">
+    <Type Name="Curso">
+      <Column Name="Id_Curso" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre_Curso" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Creditos_Curso" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Carrera" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Semestre" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Curso_Asigna_Curso" Member="Asigna_Cursos" ThisKey="Id_Curso" OtherKey="Id_Curso" Type="Asigna_Curso" />
+      <Association Name="Semestre_Curso" Member="Semestre" ThisKey="Id_Semestre" OtherKey="Id_Semestre" Type="Semestre" IsForeignKey="true" />
+      <Association Name="Carrera_Curso" Member="Carrera" ThisKey="Id_Carrera" OtherKey="Id_Carrera" Type="Carrera" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Carrera" Member="Carreras">
+    <Type Name="Carrera">
+      <Column Name="Id_Carrera" Type="System.String" DbType="NVarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre_Carrera" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Estado_Carrera" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Carrera_Curso" Member="Cursos" ThisKey="Id_Carrera" OtherKey="Id_Carrera" Type="Curso" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Asigna_Curso" Member="Asigna_Cursos">
+    <Type Name="Asigna_Curso">
+      <Column Name="id_alum_curso" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Carne" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Curso" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Zona" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Final" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Literal" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Argumento" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="fecha_asignacion" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_ingreso_nota" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Curso_Asigna_Curso" Member="Curso" ThisKey="Id_Curso" OtherKey="Id_Curso" Type="Curso" IsForeignKey="true" />
+      <Association Name="Alumno_Asigna_Curso" Member="Alumno" ThisKey="Carne" OtherKey="Carne" Type="Alumno" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Alumno" Member="Alumnos">
+    <Type Name="Alumno">
+      <Column Name="Carne" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Apellido1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Apellido2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fecha_Nac" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Celular" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="estado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Alumno_Asigna_Curso" Member="Asigna_Cursos" ThisKey="Carne" OtherKey="Carne" Type="Asigna_Curso" />
+    </Type>
+  </Table>
+</Database>

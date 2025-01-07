@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "c:\\Users\\prograsei\\Documents\\Blazor\\Two\\Two\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Two.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Two.bundle.scp.css"
+    },
+    {
+      "Id": "c:\\Users\\prograsei\\Documents\\Blazor\\Two\\Two\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "c:\\Users\\prograsei\\Documents\\Blazor\\Two\\Two\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "c:\\Users\\prograsei\\Documents\\Blazor\\Two\\Two\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "c:\\Users\\prograsei\\Documents\\Blazor\\Two\\Two\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Two.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Two.props",
+      "PackagePath": "build\\Two.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Two.props",
+      "PackagePath": "buildMultiTargeting\\Two.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Two.props",
+      "PackagePath": "buildTransitive\\Two.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
